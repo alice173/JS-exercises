@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Javascript Exercises</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!-- Expense Tracker -->
+    <div class="expense-tracker">
+      <h2>Expense Tracker</h2>
+      <p>Add a New Item</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" />
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" /><br /><br />
+
+        <input type="submit" value="Submit" class="submit" />
+      </form>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>No expenses added yet</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Note Taker -->
+    <div class="note-taker"></div>
+
+    <!-- Vowel counter -->
+    <div class="vowel-counter"></div>
     <script src="index.js"></script>
   </body>
 </html>
