@@ -1,5 +1,28 @@
 /* expense tracker */
+.expense-tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+  padding: 1rem;
+  h2,
+  p {
+    text-align: center;
+  }
 
+  form {
+    margin-bottom: 2rem;
+    .submit {
+      margin-inline: auto;
+    }
+  }
+  table {
+    width: 70%;
+    th {
+      text-align: left;
+    }
+  }
+}
 /* note taker */
 
 /* vowel counter */
