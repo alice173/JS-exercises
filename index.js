@@ -29,5 +29,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //note taker
 });
-
-// Alice changes part two
