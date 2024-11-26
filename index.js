@@ -29,4 +29,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //note taker
 });
-Dillon;
