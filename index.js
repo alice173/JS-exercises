@@ -26,6 +26,58 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // expense tracker
+  const nameEl = document.getElementById("name");
+  const dateEl = document.getElementById("date");
+  const amountEl = document.getElementById("amount");
+  const submit = document.getElementById("submit");
 
+  nameEl.focus();
+
+  submit.addEventListener("click", (e) => {
+    e.preventDefault();
+    addExpense();
+  });
+
+  function addExpense() {
+    const name = nameEl.value;
+    const date = dateEl.value;
+    const amount = amountEl.value;
+    const table = document.getElementById("table");
+
+    //Remove placeholder row
+    document.getElementById("noExpenseRow").style.display = "none";
+    // Insert a new row at the end of the table
+    const newRow = table.insertRow();
+
+    // Insert new cells in the new row
+    const nameCell = newRow.insertCell(0);
+    const dateCell = newRow.insertCell(1);
+    const amountCell = newRow.insertCell(2);
+    const deleteCell = newRow.insertCell(3);
+    //Add content to cells
+    nameCell.textContent = name;
+    dateCell.textContent = date;
+    amountCell.textContent = amount;
+
+    //delete button
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "X";
+    deleteButton.classList.add("delete");
+    deleteCell.appendChild(deleteButton);
+
+    // Add event listener to delete button
+    deleteButton.addEventListener("click", function () {
+      table.deleteRow(newRow.rowIndex);
+    });
+    //remove content from form
+
+    nameEl.value = null;
+    amountEl.value = null;
+    dateEl.value = null;
+
+    //Focus on name
+
+    nameEl.focus();
+  }
   //note taker
 });

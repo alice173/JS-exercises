@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Exercises</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Javascript Exercises</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
+  <body>
+    <!-- Expense Tracker -->
+    <div class="expense-tracker">
+      <h2>Expense Tracker</h2>
+      <p>Add a New Item</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
 
-<body>
-  <!-- Expense Tracker -->
-  <div class="expense-tracker">
-    <h2>Expense Tracker</h2>
-    <p>Add a New Item</p>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" /><br /><br />
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" />
 
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="date" />
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" /><br /><br />
 
-      <label for="amount">Amount:</label>
-      <input type="number" id="amount" name="amount" /><br /><br />
-
-      <input type="submit" value="Submit" class="submit" />
-    </form>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Date</th>
-        <th>Amount</th>
-      </tr>
-      <tr>
-        <td>No expenses added yet</td>
-      </tr>
-    </table>
-  </div>
-  <!-- Note Taker -->
-  <div class="note-taker"></div>
-  <div class="note-taker">
-    <h1>Note Taker App</h1>
-    <div class="note-input">
-      <textarea id="new-note" placeholder="Enter your note here..."></textarea>
-      <button id="add-note">Add Note</button>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+      <table id="table">
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+        </tr>
+        <tr id="noExpenseRow">
+          <td>No expenses added yet</td>
+        </tr>
+      </table>
     </div>
-    <div class="notes-list">
-      <h2>Your Notes</h2>
-      <ul id="notes">
-        <!-- Notes will be dynamically added here -->
-      </ul>
+    <!-- Note Taker -->
+    <div class="note-taker"></div>
+    <div class="note-taker">
+      <h1>Note Taker App</h1>
+      <div class="note-input">
+        <textarea
+          id="new-note"
+          placeholder="Enter your note here..."
+        ></textarea>
+        <button id="add-note">Add Note</button>
+      </div>
+      <div class="notes-list">
+        <h2>Your Notes</h2>
+        <ul id="notes">
+          <!-- Notes will be dynamically added here -->
+        </ul>
+      </div>
     </div>
-  </div>
 
+    <!-- Vowel Counter -->
 
-<!-- Vowel Counter -->
-
-  <div class="vowel-counter">
-    <h1>Vowel Counter</h1>
-    <input type="text" id="text-input" placeholder="Enter text here">
-    <button id="count-vowels">Count Vowels</button>
-    <p id="vowel-result">Number of vowels: </p>
-  </div>
-  <script src="index.js"></script>
-</body>
+    <div class="vowel-counter">
+      <h1>Vowel Counter</h1>
+      <input type="text" id="text-input" placeholder="Enter text here" />
+      <button id="count-vowels">Count Vowels</button>
+      <p id="vowel-result">Number of vowels:</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

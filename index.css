@@ -12,9 +12,6 @@
 
   form {
     margin-bottom: 2rem;
-    .submit {
-      margin-inline: auto;
-    }
   }
   table {
     width: 70%;
@@ -22,6 +19,14 @@
       text-align: left;
     }
   }
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 /* note taker */
 
