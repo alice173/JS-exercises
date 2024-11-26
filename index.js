@@ -24,7 +24,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return count;
     }
-}); 
-
-
-ABCD    
+});
+Dillon 
