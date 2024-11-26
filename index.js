@@ -25,3 +25,5 @@ document.addEventListener("DOMContentLoaded", function () {
         return count;
     }
 });
+
+// Alice changes
